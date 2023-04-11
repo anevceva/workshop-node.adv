@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "6084d63a-51d9-4298-926f-6aebbc80ecd1",
+		"name": "Music",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllSongs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/songs/dogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"songs",
+						"dogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewSong",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"dogs\",\r\n  \"genre\": \"jazz\",\r\n  \"year\": 2005,\r\n  \"album\": \"Cats\",\r\n  \"artist\": \"Petre\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/songs/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"songs",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllArtists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/artists/Angela",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"artists",
+						"Angela"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewArtist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Angela\",\r\n  \"age\": 28\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/artists/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"artists",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
